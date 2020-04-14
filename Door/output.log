@@ -1,0 +1,506 @@
+[Info]: 2020-02-23 14:18:21.063601
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-24 07:43:38.690228
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-24 08:16:19.148023
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-24 17:20:53.316487
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-24 18:00:47.652381
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-24 19:19:47.409584
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-24 19:20:05.421618
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-24 20:06:11.145859
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-24 20:06:26.644179
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-25 07:46:27.857190
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-25 08:24:08.045690
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-25 17:27:22.014935
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-25 17:42:07.912874
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-26 07:46:23.426755
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-26 08:26:52.675309
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-26 17:18:02.384238
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-26 17:46:01.984173
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-27 07:47:25.680298
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-27 08:08:37.260795
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-27 12:35:24.937864
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-27 12:39:00.177838
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-27 17:37:11.443156
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-27 20:52:31.277482
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-28 07:47:40.095658
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-28 10:30:58.624781
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-28 10:31:26.018985
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-28 12:39:26.877142
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-28 13:03:52.846260
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-28 16:50:29.223964
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-28 17:23:34.402773
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-28 18:53:47.305263
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-28 19:04:45.431924
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-28 19:18:06.161191
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-29 11:11:04.863574
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-29 14:15:13.643832
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-29 14:16:38.157204
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-29 14:18:00.471604
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-29 14:19:24.111603
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-29 14:20:39.321056
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-29 16:47:36.905068
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-02-29 16:47:50.625111
+Door Open
+Lights on
+Door Closed
+[Info]: 2020-04-09 15:00:14.581821
+Door Open
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/urllib/request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/usr/lib/python3.7/http/client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/lib/python3.7/socket.py", line 727, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 17, in __init__
+    self.trackDoor()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 34, in trackDoor
+    self.doorOpen()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 43, in doorOpen
+    motion_toggle.Motion_Toggle(False)
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 9, in __init__
+    self.sendRequest()
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 17, in sendRequest
+    resp = request.urlopen(req)
+  File "/usr/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.7/urllib/request.py", line 543, in _open
+    '_open', req)
+  File "/usr/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.7/urllib/request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/python3.7/urllib/request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
+
+[Info]: 2020-04-09 15:04:57.836099
+Door Open
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/urllib/request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/usr/lib/python3.7/http/client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/lib/python3.7/socket.py", line 727, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 17, in __init__
+    self.trackDoor()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 34, in trackDoor
+    self.doorOpen()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 43, in doorOpen
+    motion_toggle.Motion_Toggle(False)
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 9, in __init__
+    self.sendRequest()
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 17, in sendRequest
+    resp = request.urlopen(req)
+  File "/usr/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.7/urllib/request.py", line 543, in _open
+    '_open', req)
+  File "/usr/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.7/urllib/request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/python3.7/urllib/request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
+
+[Info]: 2020-04-09 15:20:58.869960
+Door Open
+[Info]: 2020-04-09 17:31:33.513475
+Door Open
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/urllib/request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/usr/lib/python3.7/http/client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/lib/python3.7/socket.py", line 727, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 17, in __init__
+    self.trackDoor()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 34, in trackDoor
+    self.doorOpen()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 43, in doorOpen
+    motion_toggle.Motion_Toggle(False)
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 9, in __init__
+    self.sendRequest()
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 17, in sendRequest
+    resp = request.urlopen(req)
+  File "/usr/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.7/urllib/request.py", line 543, in _open
+    '_open', req)
+  File "/usr/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.7/urllib/request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/python3.7/urllib/request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
+
+[Info]: 2020-04-09 18:08:40.596970
+Door Open
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/urllib/request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/usr/lib/python3.7/http/client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/lib/python3.7/socket.py", line 727, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 17, in __init__
+    self.trackDoor()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 34, in trackDoor
+    self.doorOpen()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 43, in doorOpen
+    motion_toggle.Motion_Toggle(False)
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 9, in __init__
+    self.sendRequest()
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 17, in sendRequest
+    resp = request.urlopen(req)
+  File "/usr/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.7/urllib/request.py", line 543, in _open
+    '_open', req)
+  File "/usr/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.7/urllib/request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/python3.7/urllib/request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
+
+[Info]: 2020-04-12 12:38:22.829758
+Door Open
+[Info]: 2020-04-13 10:02:55.500611
+Door Open
+[Info]: 2020-04-13 11:03:04.764931
+Door Open
+[Info]: 2020-04-13 11:07:14.921496
+Door Open
+[Info]: 2020-04-13 11:11:29.662122
+Door Open
+[Info]: 2020-04-13 11:21:12.969610
+Door Open
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/urllib/request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/usr/lib/python3.7/http/client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/lib/python3.7/socket.py", line 727, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 17, in __init__
+    self.trackDoor()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 34, in trackDoor
+    self.doorOpen()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 43, in doorOpen
+    motion_toggle.Motion_Toggle(False)
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 9, in __init__
+    self.sendRequest()
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 17, in sendRequest
+    resp = request.urlopen(req)
+  File "/usr/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.7/urllib/request.py", line 543, in _open
+    '_open', req)
+  File "/usr/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.7/urllib/request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/python3.7/urllib/request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
+
+[Info]: 2020-04-13 11:27:31.262842
+Door Open
+Exception in thread Thread-1:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/urllib/request.py", line 1317, in do_open
+    encode_chunked=req.has_header('Transfer-encoding'))
+  File "/usr/lib/python3.7/http/client.py", line 1229, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1275, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1224, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.7/http/client.py", line 1016, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.7/http/client.py", line 956, in send
+    self.connect()
+  File "/usr/lib/python3.7/http/client.py", line 928, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/lib/python3.7/socket.py", line 727, in create_connection
+    raise err
+  File "/usr/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 17, in __init__
+    self.trackDoor()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 34, in trackDoor
+    self.doorOpen()
+  File "/home/pi/Documents/SmartHome/Door/operation_door.py", line 43, in doorOpen
+    motion_toggle.Motion_Toggle(False)
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 9, in __init__
+    self.sendRequest()
+  File "/home/pi/Documents/SmartHome/Door/Requests/motion_toggle.py", line 17, in sendRequest
+    resp = request.urlopen(req)
+  File "/usr/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.7/urllib/request.py", line 525, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.7/urllib/request.py", line 543, in _open
+    '_open', req)
+  File "/usr/lib/python3.7/urllib/request.py", line 503, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.7/urllib/request.py", line 1345, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/python3.7/urllib/request.py", line 1319, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
+

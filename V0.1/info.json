@@ -1,0 +1,55 @@
+{
+  "days": {
+    "day": [
+      {
+        "id": 0,
+        "alarm_time": "07:00",
+        "traffic_needed": true,
+        "traffic_time": "07:20",
+        "traffic_length": 20
+      },
+      {
+        "id": 1,
+        "alarm_time": "07:00",
+        "traffic_needed": true,
+        "traffic_time": "07:20",
+        "traffic_length": 20
+      },
+      {
+        "id": 2,
+        "alarm_time": "07:00",
+        "traffic_needed": true,
+        "traffic_time": "07:20",
+        "traffic_length": 20
+      },
+      {
+        "id": 3,
+        "alarm_time": "07:00",
+        "traffic_needed": true,
+        "traffic_time": "07:40",
+        "traffic_length": 20
+      },
+      {
+        "id": 4,
+        "alarm_time": "07:00",
+        "traffic_needed": true,
+        "traffic_time": "07:40",
+        "traffic_length": 20
+      },
+      {
+        "id": 5,
+        "alarm_time": null,
+        "traffic_needed": false,
+        "traffic_time": null,
+        "traffic_length": null
+      },
+      {
+        "id": 6,
+        "alarm_time": null,
+        "traffic_needed": false,
+        "traffic_time": null,
+        "traffic_length": null
+      }
+    ]
+  }
+}

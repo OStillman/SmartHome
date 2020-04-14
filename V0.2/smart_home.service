@@ -1,0 +1,10 @@
+[Unit]
+Description=Run the Smart Home Service
+After=network.target
+
+[Service]
+ExecStart=nohup /usr/bin/python3 -u /home/pi/Documents/SmartHome/V0.2/operation_door.py > /home/pi/Documents/SmartHome/V0.2/output.log &
+User=pi
+
+[Install]
+WantedBy=multi-user.target

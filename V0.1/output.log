@@ -1,0 +1,35 @@
+Day(id=2, traffic_needed=True, alarm_time='07:00', traffic_time='07:20', traffic_length=20)
+Traffic Required
+Traffic Ran @ 2020-04-08 07:20:00.280218
+Base time: 24.166666666666668
+Traffic Time: 24.166666666666668
+Traffic Adds: 0.0
+NO TRAFFIC
+Base time: 24.166666666666668
+Traffic Time: 24.166666666666668
+Traffic Adds: 0.0
+NO TRAFFIC
+Base time: 24.166666666666668
+Traffic Time: 24.166666666666668
+Traffic Adds: 0.0
+NO TRAFFIC
+Base time: 24.166666666666668
+Traffic Time: 24.166666666666668
+Traffic Adds: 0.0
+NO TRAFFIC
+Base time: 24.166666666666668
+Traffic Time: 24.166666666666668
+Traffic Adds: 0.0
+NO TRAFFIC
+Base time: 24.166666666666668
+Traffic Time: 24.166666666666668
+Traffic Adds: 0.0
+NO TRAFFIC
+Base time: 24.166666666666668
+Traffic Time: 24.166666666666668
+Traffic Adds: 0.0
+NO TRAFFIC
+Base time: 24.166666666666668
+Traffic Time: 24.166666666666668
+Traffic Adds: 0.0
+NO TRAFFIC
