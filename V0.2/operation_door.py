@@ -4,6 +4,7 @@ from Requests import motion_toggle
 import RPi.GPIO as GPIO
 import time
 import datetime as dt
+import sys
 
 import threading
 
@@ -14,6 +15,7 @@ class Operation:
 
     def __init__(self):
         # self.doorOpen()
+        print("Door Tracking Initialised", file=sys.stderr)
         time.sleep(60)
         self.trackDoor()
 
@@ -40,11 +42,13 @@ class Operation:
 
     def doorOpen(self):
         self.open_time = dt.datetime.now()
-        print ("[Info]: " + str(self.open_time))
-        print ("Door Open")
+        #print ("[Info]: " + str(self.open_time))
+        #print ("Door Open")
+        print("Door Open", file=sys.stderr)
         motion_toggle.Motion_Toggle(False)
         lights.HallwayToggle(True)
-        print("Lights on")
+        #print("Lights on")
+        print("Lights on", file=sys.stderr)
         lights.LivingRoomAlert(True)
         time.sleep(1)
 
@@ -55,7 +59,8 @@ class Operation:
     #    time.sleep(5)
     
     def doorClose(self):
-        print("Door Closed")
+        #print("Door Closed")
+        print("Door Closed", file=sys.stderr)
         motion_toggle.Motion_Toggle(True)
         lights.LivingRoomAlert(False)
 

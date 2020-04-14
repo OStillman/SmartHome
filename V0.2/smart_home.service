@@ -3,7 +3,8 @@ Description=Run the Smart Home Service
 After=network.target
 
 [Service]
-ExecStart=nohup /usr/bin/python3 -u /home/pi/Documents/SmartHome/V0.2/operation_door.py > /home/pi/Documents/SmartHome/V0.2/output.log &
+ExecStart=/usr/bin/python3  /home/pi/Documents/SmartHome/V0.2/operation_door.py
+WorkingDirectory=/home/pi/Documents/SmartHome/V0.2/
 User=pi
 
 [Install]
