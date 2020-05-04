@@ -2,6 +2,9 @@
 
 import os, sys
 import subprocess
+import constants
+
+from Hue import light_control as lights
 
 
 class DoorWatcher:
@@ -13,8 +16,9 @@ class DoorWatcher:
         while self.procExe.poll() is None:
             line = self.procExe.stdout.readline()
             #print("Print:" + line)
-            if "12062824" in line:
+            if constants.door_sensor in line:
                 print("Door Open")
+                lights.SimpleLightsToggle("group", constants.hallway_brightness, constants.hallway)
             elif line != "":
                 print(line)
 
