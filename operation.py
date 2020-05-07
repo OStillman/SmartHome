@@ -3,6 +3,7 @@
 import os, sys
 import subprocess
 import constants
+import threading
 
 from Hue import light_control as lights
 
@@ -16,9 +17,17 @@ class DoorWatcher:
         while self.procExe.poll() is None:
             line = self.procExe.stdout.readline()
             #print("Print:" + line)
-            if constants.door_sensor in line:
+            if constants.door_sensor_open in line:
                 print("Door Open")
-                lights.SimpleLightsToggle("group", constants.hallway_brightness, constants.hallway)
+                on_thread = threading.Thread(target=lights.SimpleLightsToggle, args=("group", constants.hallway, True, constants.hallway_brightness))
+                off_motion_thread = threading.Thread(target=lights.SimpleLightsToggle, args=("motion_sensor", constants.motion_sensor_id, False))
+                on_thread.start()
+                off_motion_thread.start()
+                #lights.SimpleLightsToggle("group", constants.hallway_brightness, constants.hallway, True)
+            elif constants.door_sensor_close in line:
+                print("Door Closed")
+                off_thread = threading.Thread(target=lights.SimpleLightsToggle, args=("motion_sensor", constants.motion_sensor_id, True))
+                off_thread.start()
             elif line != "":
                 print(line)
 
