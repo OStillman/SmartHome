@@ -1,0 +1,5 @@
+Door Sensor = 12062824
+
+New Sensor
+Close = 2045335
+Open = 2045342
