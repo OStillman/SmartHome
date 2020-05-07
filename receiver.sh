@@ -6,5 +6,6 @@ while true;  do
 		echo $output
 		sleep 2
 	fi
+	sleep 0.1
 done
 exit
