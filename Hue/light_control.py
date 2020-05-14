@@ -21,9 +21,9 @@ class SimpleLightsToggle:
 
     def setupURL(self):
         if self.type == "group":
-            self.url = "http://192.168.0.12/api/%s/groups/%s/action"%(constants.username, self.id)
+            self.url = "http://192.168.68.119/api/%s/groups/%s/action"%(constants.username, self.id)
         elif self.type == "motion_sensor":
-            self.url = "http://192.168.0.12/api/%s/sensors/%s/config"%(constants.username, self.id)
+            self.url = "http://192.168.68.119/api/%s/sensors/%s/config"%(constants.username, self.id)
 
     def setupBody(self):        
         if self.type == "group" and self.id == constants.hallway:
