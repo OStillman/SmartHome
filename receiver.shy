@@ -4,7 +4,7 @@ while true;  do
 	output=`./RPi_utils/RFSniffer`
 	if [ -n "$output" ]; then
 		echo $output
-		sleep 1
+		sleep 0.5
 	fi
 	sleep 0.1
 done
